@@ -1,0 +1,26 @@
+.footer {
+    background: #1a202c; /* Slightly darker background for more contrast */
+    padding: 2rem 1.5rem; /* Increased padding for a more spacious look */
+  }
+  
+  .footer-icon img {
+    border-radius: 50%; /* Circular images for a more modern look */
+    border: 2px solid #fff; /* White border around icons */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .footer-icon img:hover {
+    transform: scale(1.1);
+    border-color: #4fd1c5; /* Change border color on hover for a touch of color */
+  }
+  
+  .footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem; /* Slightly larger text for better readability */
+  }
+  
+  .footer p::before {
+    content: "💖 ";
+    font-size: 1.25rem; /* Larger heart emoji for emphasis */
+  }
+  

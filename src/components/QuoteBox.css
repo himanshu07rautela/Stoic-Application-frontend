@@ -1,0 +1,47 @@
+.quote-box {
+  background:  url('../images/quotes image.png'); /* Subtle gradient with background image */
+  background-size: cover; /* Ensure the image covers the entire box */
+  background-position: center; /* Center the background image */
+  color: #ffcd00; /* Gold text */
+  font-family: 'Lugrasimo', serif; /* Custom font */
+  padding: 45px 30px; /* Slightly smaller padding */
+  margin: 20px auto; /* Center the box horizontally and add top and bottom margin */
+  border-radius: 15px; /* Slightly reduced border-radius for less rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  width: 90%; /* Slightly smaller width */
+  max-width: 100%; /* Match max-width of FeaturesSection */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Adjust text size to be 1.75 times larger */
+.quote-text {
+  font-size: 2.625rem; /* 1.75 times the original 1.5rem */
+  font-weight: 300; /* Lighter weight */
+}
+/* linear-gradient(145deg, #000101, #333), */
+.quote-author {
+  font-size: 1.75rem; /* 1.75 times the original 1rem */
+  font-weight: 300; /* Lighter weight */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 2.25rem; /* Adjusted size for tablets */
+  }
+
+  .quote-author {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-text {
+    font-size: 1.75rem; /* Adjusted size for mobile devices */
+  }
+
+  .quote-author {
+    font-size: 1.4rem;
+  }
+}

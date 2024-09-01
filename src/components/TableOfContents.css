@@ -1,0 +1,71 @@
+.table-of-contents {
+    background-color: #1a1a1a; /* Dark theme background */
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .column1 {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .underline {
+    width: 80px;
+    height: 4px;
+    background-color: #31c971; /* Light green for the underline */
+    margin: 0 auto 20px;
+  }
+  
+  .links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .content-button {
+    background: #3ca88b; /* Dark green background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .content-button:hover {
+    background-color: #2a7e5b; /* Slightly darker green for hover */
+    transform: scale(1.05);
+  }
+  
+  /* Flexbox to ensure 3 buttons in the first row and 2 in the second */
+  .links-wrapper > a:nth-child(1),
+  .links-wrapper > a:nth-child(2),
+  .links-wrapper > a:nth-child(3) {
+    flex: 1 1 30%; /* 3 buttons in a row */
+  }
+  
+  .links-wrapper > a:nth-child(4),
+  .links-wrapper > a:nth-child(5) {
+    flex: 1 1 45%; /* 2 buttons in a row */
+  }
+  
+  @media (max-width: 768px) {
+    .links-wrapper > a {
+      flex: 1 1 100%; /* Stack buttons vertically on smaller screens */
+    }
+  }
+  
