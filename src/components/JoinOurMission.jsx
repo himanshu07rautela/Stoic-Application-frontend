@@ -12,7 +12,7 @@ const JoinOurMission = () => {
   useEffect(() => {
     const fetchSubscribers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/subscribers/count');
+        const response = await axios.get('https://stoic-application-backend-1.onrender.com/api/subscribers/count');
         setTotalSubscribers(response.data.count);
       } catch (err) {
         console.error('Error fetching subscriber count:', err.message);
@@ -27,7 +27,7 @@ const JoinOurMission = () => {
     setError(null);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/subscribers/subscribe', { email });
+      const response = await axios.post('https://stoic-application-backend-1.onrender.com/api/subscribers/subscribe', { email });
       setSubmitted(true);
       setLoading(false);
       setEmail('');
