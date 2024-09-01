@@ -8,10 +8,13 @@ const QuoteBox = () => {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await fetch('/api/stoic-quote'); // Use the proxy path
+        // Update the URL to the new API endpoint
+        const response = await fetch('https://quotes-api-self.vercel.app/quote');
         const data = await response.json();
-        setQuote(data.data.quote);
-        setAuthor(data.data.author);
+        
+        // Assuming the structure of the response is { quote: "some quote", author: "some author" }
+        setQuote(data.quote);
+        setAuthor(data.author);
       } catch (error) {
         console.error('Error fetching quote:', error);
       }
