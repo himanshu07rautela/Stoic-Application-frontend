@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './FeaturesSection.css'; // Import your CSS file here
-import senneca from '../images/seneca1.jpg'
-import philospher from '../images/philosophers1.jpg'
-import stone from '../images/stone.jpg'
+import senneca from '../images/seneca1.jpg';
+import philospher from '../images/philosophers1.jpg';
+import stone from '../images/stone.jpg';
+
 const FeatureCard = ({ imageSrc, title, description, buttonText, buttonLink, isImageLeft }) => {
   return (
     <div className={`feature-card ${isImageLeft ? 'image-left' : 'image-right'}`}>
@@ -12,9 +14,9 @@ const FeatureCard = ({ imageSrc, title, description, buttonText, buttonLink, isI
       <div className="feature-content">
         <h2>{title}</h2>
         <h5>{description}</h5>
-        <a href={buttonLink}>
+        <Link to={buttonLink}> {/* Use Link for internal routing */}
           <button className="feature-button">{buttonText}</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
